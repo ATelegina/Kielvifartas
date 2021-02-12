@@ -53,7 +53,9 @@ def i_donisto(message):
             
      elif(message.text.lower().find("fartas") != -1):
          bot.reply_to(message, "Mi estas stulta boto. Mi vidas vorton \"fartas\", sed mi ne certas ĉu vi demandis \"Kiel vi fartas?\"")
-            
-        
+       
+     elif(message.text.lower()=="ĉu mi estas finvenkisto?"):     
+        bot.reply_to(message, "Jes, vi estas")
+
 bot.polling()
 
