@@ -4,8 +4,8 @@ Created on Thu Jan 28 16:55:35 2021
 upd: 07.02.2020 21:31
 @author: Dasha
 """
-TOKEN = "1585095785:AAEm6uWijaZbeSU_QXBBAhGrMl2KuTj8nTg"
-#TOKEN = "1684189121:AAFzYn7v_kVhBRylzU-fugyPfZ7fzPnhEW8"
+#TOKEN = "1585095785:AAEm6uWijaZbeSU_QXBBAhGrMl2KuTj8nTg"
+TOKEN = "1684189121:AAFzYn7v_kVhBRylzU-fugyPfZ7fzPnhEW8"
 
 versio="0.2"
 
@@ -39,8 +39,9 @@ def i_donisto(message):
      babilido = str(message.chat.id)
      print("Nova mesaĝo ĉe " + babilido + "\n")
      
-     if (message.text.lower() =='kiel vi fartas?' or message.text.lower() == "fartas kiel vi?" or message.text.lower() == "kiel fartas vi?" or message.text.lower() == "fartas vi kiel?" or message.text.lower() == "vi fartas kiel?" or message.text.lower() == "vi kiel fartas?"):
-         
+     #if (message.text.lower() =='kiel vi fartas?' or message.text.lower() == "fartas kiel vi?" or message.text.lower() == "kiel fartas vi?" or message.text.lower() == "fartas vi kiel?" or message.text.lower() == "vi fartas kiel?" or message.text.lower() == "vi kiel fartas?"):
+      if (message.text.lower().find('fartas') == true and message.text.lower().find('kiel') == true):
+        
         frazilo = random.randint(0,11)
         idilo = random.randint(0,19)
         
