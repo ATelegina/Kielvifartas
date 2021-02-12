@@ -40,7 +40,7 @@ def i_donisto(message):
      print("Nova mesaĝo ĉe " + babilido + "\n")
      
      #if (message.text.lower() =='kiel vi fartas?' or message.text.lower() == "fartas kiel vi?" or message.text.lower() == "kiel fartas vi?" or message.text.lower() == "fartas vi kiel?" or message.text.lower() == "vi fartas kiel?" or message.text.lower() == "vi kiel fartas?"):
-      if (message.text.lower().find('fartas') == true and message.text.lower().find('kiel') == true):
+     if (message.text.lower().find('fartas') == true and message.text.lower().find('kiel') == true):
         
         frazilo = random.randint(0,11)
         idilo = random.randint(0,19)
