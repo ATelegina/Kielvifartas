@@ -52,7 +52,8 @@ def i_donisto(message):
             bot.reply_to(message, tekstaro.frazoj[frazilo] + tekstaro.ideoj[idilo]) 
             
      elif(message.text.lower().find("fartas") != -1):
-         bot.reply_to(message, "Mi estas stulta boto. Mi vidas vorton \"fartas\", sed mi ne certas ĉu vi demandis \"Kiel vi fartas?\"")
+         #bot.reply_to(message, "Mi estas stulta boto. Mi vidas vorton \"fartas\", sed mi ne certas ĉu vi demandis \"Kiel vi fartas?\"")
+         bot.reply_to(message, "Mi jam lacis diri, ke mi estas stulta boto. Skribu \"Kiel vi fartas?\" normale")
        
      elif(message.text.lower()=="ĉu mi estas finvenkisto?"):     
         bot.reply_to(message, "Jes, vi estas")
