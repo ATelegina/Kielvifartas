@@ -4,8 +4,8 @@ Created on Thu Jan 28 16:55:35 2021
 upd: 07.02.2020 21:31
 @author: Dasha
 """
-#TOKEN = "1585095785:AAEm6uWijaZbeSU_QXBBAhGrMl2KuTj8nTg"
-TOKEN = "1684189121:AAFzYn7v_kVhBRylzU-fugyPfZ7fzPnhEW8"
+TOKEN = "1585095785:AAEm6uWijaZbeSU_QXBBAhGrMl2KuTj8nTg"
+#TOKEN = "1684189121:AAFzYn7v_kVhBRylzU-fugyPfZ7fzPnhEW8"
 
 versio="0.3"
 
