@@ -60,6 +60,9 @@ def i_donisto(message):
      
      elif(message.text.lower().find('stulta') != -1 and message.text.lower().find('boto') != -1):
         bot.reply_to(message, "Ege malrespekte")
+	     
+     elif(message.text.lower().find('li havas mil.')):
+        bot.reply_to(message, "...dan voĉon")
 
 bot.polling()
 
