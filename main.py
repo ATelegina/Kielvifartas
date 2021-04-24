@@ -7,7 +7,7 @@ upd: 07.02.2020 21:31
 TOKEN = "1585095785:AAEm6uWijaZbeSU_QXBBAhGrMl2KuTj8nTg"
 #TOKEN = "1684189121:AAFzYn7v_kVhBRylzU-fugyPfZ7fzPnhEW8"
 
-versio="0.4a"
+versio="0.4b"
 
 import telebot
 import random
@@ -59,7 +59,7 @@ def i_donisto(message):
         bot.reply_to(message, "Jes, vi estas")
 	
      elif(message.text.lower().find('dankon') != -1 and message.text.lower().find('bot') != -1):    
-        bot.reply_to(message, "reago")
+        bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAECOgdghHodXZzYd6-o8kNZ_MKkh1RvmAACQwADr8ZRGmSWUHOeMBH3HwQ")
      
      elif(message.text.lower().find('stulta') != -1 and message.text.lower().find('boto') != -1):
         bot.reply_to(message, "Eĉ se vi parolas ne pri mi, insulti robotojn estas hontaĵo")
