@@ -7,7 +7,7 @@ upd: 07.02.2020 21:31
 TOKEN = "1585095785:AAEm6uWijaZbeSU_QXBBAhGrMl2KuTj8nTg"
 #TOKEN = "1684189121:AAFzYn7v_kVhBRylzU-fugyPfZ7fzPnhEW8"
 
-versio="0.3"
+versio="0.4"
 
 import telebot
 import random
@@ -55,11 +55,14 @@ def i_donisto(message):
          #bot.reply_to(message, "Mi estas stulta boto. Mi vidas vorton \"fartas\", sed mi ne certas ĉu vi demandis \"Kiel vi fartas?\"")
          bot.reply_to(message, "Mi jam lacis diri, ke mi estas stulta boto. Skribu \"Kiel vi fartas?\" normale")
        
-     elif(message.text.lower()=="ĉu mi estas finvenkisto?"):     
+     elif(message.text.lower().find('ĉu mi estas') != -1):    
         bot.reply_to(message, "Jes, vi estas")
+	
+     elif(message.text.lower().find('dankon') != -1 and message.text.lower().find('bot') !=-1):    
+        bot.reply_to(message, ":kissing_heart")
      
      elif(message.text.lower().find('stulta') != -1 and message.text.lower().find('boto') != -1):
-        bot.reply_to(message, "Ege malrespekte")
+        bot.reply_to(message, "Eĉ se vi parolas ne pri mi, insulti robotojn estas hontaĵo")
 	     
      elif(message.text.lower().find('li havas mil') != -1):
         bot.reply_to(message, "...dan voĉon")
