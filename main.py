@@ -68,7 +68,7 @@ def i_donisto(message):
         bot.reply_to(message, "...dan voĉon")
 	
      elif(message.text.lower().find('vi vivas!') != -1):
-        bot.send_chat_action(chat_id=chat_id, action=telegram.ChatAction.TYPING)
+        bot.send_message(chat_id=chat_id, text="I'm sorry Dave I'm afraid I can't do that.")
 
 bot.polling()
 
