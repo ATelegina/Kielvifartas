@@ -66,6 +66,9 @@ def i_donisto(message):
 	     
      elif(message.text.lower().find('li havas mil') != -1):
         bot.reply_to(message, "...dan voĉon")
+	
+     elif(message.text.lower().find('vi vivas!') != -1):
+        bot.send_chat_action(chat_id=chat_id, action=telegram.ChatAction.TYPING)
 
 bot.polling()
 
